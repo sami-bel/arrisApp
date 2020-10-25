@@ -1,0 +1,20 @@
+body {
+    background: #43B29D !important;
+}
+.home {
+    text-align: center;
+}
+.input-file {
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-top: 9%;
+}
+
+.center_text {
+    color: white;
+    padding-top: 44vh;
+}
+
+.white_color {
+    color: white;
+}

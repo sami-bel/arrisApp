@@ -1,3 +1,11 @@
-index:
+home:
     path: /
-    controller: App\Controller\IndexController::test
+    controller: App\Controller\HomeController::index
+
+extract_email_home:
+    path: /extract_email_home
+    controller: App\Controller\Email\EmailExtractorController::home
+
+extract_email:
+    path: /extract_email
+    controller: App\Controller\Email\EmailExtractorController::extract

@@ -2,12 +2,27 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" />
+        <!-- Material Design Bootstrap -->
+        <link href="{{ asset('assets/css/mdb.min.css') }}" rel="stylesheet" />
+        <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
+
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-    hello
+        {% include 'nav.html.twig' %}
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+
+        <script type="text/javascript" src="{{ asset('assets/js/jquery.min.js') }}"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="{{ asset('assets/js/popper.min.js') }}"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="{{ asset('assets/js/mdb.min.js') }}"></script>
+
+        {% block javascript %} {% endblock %}
     </body>
 </html>

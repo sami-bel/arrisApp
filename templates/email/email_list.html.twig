@@ -1,0 +1,17 @@
+<table class="table table-secondary">
+    <thead>
+        <tr>
+            <th scope="col">full name</th>
+            <th scope="col">Emails</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for email in emails %}
+            <tr>
+                <td>{{ email.fullName }}</td>
+                <td>{{ email.value}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
